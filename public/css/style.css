@@ -1,0 +1,165 @@
+.contact-form{ margin-top:15px;}
+.contact-form .textarea{ min-height:220px; resize:none;}
+.form-control{ box-shadow:none; border-color:#eee; height:49px;}
+.form-control:focus{ box-shadow:none; border-color:#00b09c;}
+.form-control-feedback{ line-height:50px;}
+.main-btn{ background:#00b09c; border-color:#00b09c; color:#fff;}
+.main-btn:hover{ background:#00a491;color:#fff;}
+.form-control-feedback {
+line-height: 50px;
+top: 0px;
+}
+
+
+
+
+
+#logo{display:block; background:url("../images/logo.png") no-repeat; width:192px; height:58px; text-indent:-5000px;}
+
+
+
+body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+/*    @gray-lighter: lighten(#000, 93.5%);*/
+/*   background-color:  #eee;*/
+
+}
+/*
+#q{
+     background-color:  #eee;
+}
+*/
+    .header,
+    .content,
+    .footer {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+#www{
+height: 450px;
+width: 1100px;
+}
+.header {
+    border-bottom: 1px solid #e5e5e5;
+}
+#hide{
+  font-size:36px;
+    margin-left: 2px;
+    margin-top: 2px;
+}
+
+.header h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+}
+.footer {
+/*    color: #777;*/
+    color: #337ab7;
+}
+
+.container-narrow > hr {
+    margin: 30px 0;
+}
+
+.content {
+    margin-top: 40px 0;
+}
+
+.content p + h4 {
+    margin-top: 28px;
+}
+
+/*
+.radio label{
+    color: #337ab7;
+}
+*/
+#map {
+    height: 450px;
+    width: 645px;
+}
+
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 1120px;
+    }
+/*
+    .text-center{
+        color: whitesmoke;
+    }
+*/
+ 
+/*
+    .form-control{
+        color:#337ab7;
+    }
+*/
+
+   #banner {
+		background-color: #666666;
+		background-image: url("www.jpeg");
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+		padding: 14em 0;
+		text-align: center;
+		position: relative;
+
+	}
+.add-issue {
+    text-align: center;
+}
+h1 {
+	font-family: 'Diplomata SC', cursive;
+	text-align: center;
+	color: cornflowerblue;
+}
+p {
+	font-family: 'Ranga', cursive;
+	font-size: 20px;
+	color: blue;
+}
+b {
+	font-family: 'Diplomata SC', cursive;
+	color: black;
+}
+span {
+	font-family: 'Diplomata SC', cursive;
+	color: black;
+}
+/*
+footer {
+	font-family: 'Griffy', cursive;
+	text-align: center;
+	position: relative;
+    bottom: -315px;
+}*/
+
+.fa {
+    padding: 5px;
+    margin-right: 50px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+.fa:hover {
+    opacity: 1;
+}
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+.fa-skype {
+    background: #55ACEE;
+    color: white;
+}

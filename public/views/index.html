@@ -1,0 +1,176 @@
+<!doctype html>
+<html class="no-js" ng-app="myApp">
+<head>
+    <meta charset="utf-8">
+    <title>$€ience</title>
+   
+<!--    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css"/>-->
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+      
+    <link rel="stylesheet" href="/css/style.css">
+
+ 
+   
+</head>
+
+<!--<body class="bg-primary">-->
+<body>
+<div class="container">
+
+<!--
+    <div class="header" >
+
+        <ul class="nav nav-pills pull-right">
+
+            
+              <li><a class="bg-primary" href="/#/find">$€arch</a></li>
+             <li><a class="bg-primary" href="/#/join">Join</a></li>
+             </ul>
+-->
+<!--
+          <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+-->
+       
+<!--
+     <h3><a class="bg-primary" href="/#/home">$€ience</a></h3>
+        
+    </div>  
+-->
+<!--
+        <div class="header">
+        <nav class="navbar bg-primary">
+  
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/#/home">$€ience</a>
+    </div>
+    <ul class="nav navbar-nav">
+
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+        </ul>
+      </li>
+      <li><a href="#"></a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+        
+        <li><a href="/#/find">$€arch</a></li>
+
+      <li><a href="/#/join"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
+    </ul>
+ 
+</nav>
+    </div>
+-->
+        
+      <div class="header clearfix">
+        <nav>
+            <ul class="nav nav-pills pull-left">
+            <div class="navbar-header">
+                 <h1><a class="navbar-brand"  href="/#/home" id="logo">science</a></h1>
+<!--        <h6><a class="navbar-brand"  href="/#/home">$€ience</a></h6>-->
+    </div>
+            </ul>
+          <ul class="nav nav-pills pull-right">
+<!--              class="active"-->
+                   <li role="presentation"><a href="/#/signin">Signin</a></li>
+            <li role="presentation"><a href="/#/signup">SignUp</a></li>
+               <li role="presentation"><a href="/#/community">Community</a></li> 
+            <li role="presentation"><a href="/#/find">$€arch</a></li>
+                          <li role="presentation"><a href="/#/join">Sign Up</a></li>
+<!--
+
+            <li role="presentation"><a href="#">Login</a></li>
+-->
+              <li role="presentation"><a href="#/contact">Contact</a></li>
+          </ul>
+        </nav>
+<!--        <h3><a class="navbar-brand"  href="/#/home">$€ience</a></h3>-->
+      </div>
+    
+<!--        <h6>there are no blocks between scientists</h6>-->
+        
+<!--    </div>-->
+<!--<img src="www.jpeg" id="www" class="img-rounded">-->
+  
+<!--
+    <div class="row content">
+
+
+    
+       <div class="col-md-7">
+            <div id="map" class="img-thumbnail bg-warning"></div>
+        </div>
+
+
+
+       
+
+    </div>
+-->
+  
+     <div ng-view></div>
+    <hr/>
+
+
+    <div class="footer">
+        <p class="text-center">Done By: KH.ALMUHAMMAD - O.HAJJAR - M.JAMMAL 2017</p>
+
+    </div>
+
+</div>
+ <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAS6yrghhEYaQZE8FnUoaEzg73YXAjJJE"></script>
+
+ 
+<!--    <script src="/modernizr/bin/modernizr"></script>-->
+
+
+<!--
+
+    <script src="/angular/angular.js"></script>
+    <script src="/angular-route/angular-route.js"></script>
+-->
+      <script src="https://code.angularjs.org/1.4.6/angular.min.js"></script>
+  <script src="https://code.angularjs.org/1.4.6/angular-route.min.js"></script>
+    <script src="/dist/angularjs-geolocation.min.js"></script>
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
+
+    <script src="/js/app.js"></script>
+    <script src="/js/gservice.js"></script>
+    <script src="/js/addCtrl.js"></script>
+    <script src="/js/community.js"></script>
+    <script src="/js/queryCtrl.js"></script>
+    <script src="/js/signin.route.js"></script>
+    <script src="/js/signup.route.js"></script>
+    
+      <script src="/js/services/req.js"></script>
+      <script src="/js/services/token.js"></script>
+      <script src="/js/services/priv.js"></script>
+      <script src="/js/services/auth.js"></script>
+
+    
+    
+</body>
+</html>

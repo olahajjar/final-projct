@@ -1,0 +1,95 @@
+
+
+<!--
+
+<div class="col-md-7">
+    
+       <div class="col-md-7">
+            <div id="map" class="img-thumbnail bg-warning"></div>
+        </div>
+</div>
+-->
+    <div class="row content">
+
+       <div class="col-md-7">
+            <div id="map" class="img-thumbnail bg-warning"></div>
+        </div>
+<div class="col-md-5">
+
+
+
+    <div class="panel panel-default">
+
+      
+<!--
+        <div class="panel-heading">
+            <h2 class="panel-title text-center"><p>Sign up<span class="glyphicon glyphicon-map-marker"></p></span><span class="badge ">All fields required</span></h2> 
+        </div>
+-->
+
+        <div class="panel-body">
+
+   
+            <form name ="addForm" novalidate>
+
+             
+             
+                    <div class="form-group">
+                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="your Email">
+                   </div>
+                   
+                   <div class="form-group">
+
+                    <input type="text" class="form-control" id="username" placeholder="your Password" ng-model="formData.username" required>
+                </div>
+                     
+                   <div class="form-group">
+
+                    <input type="text" class="form-control" id="username" placeholder="Confirm your Password" ng-model="formData.username" required>
+                </div>
+                   <div class="form-group">
+              
+               
+                   
+                    <input type="text" class="form-control" id="username" placeholder="your Username" ng-model="formData.username" required>
+                </div>
+                 <div class="form-group">
+
+                    <input type="number" class="form-control" id="age" placeholder="your age" ng-model="formData.age" required>
+                </div>
+<form>
+                <div class="radio required">
+                    <label>
+                        <input type="radio" name="optionsRadios" id="radiomale" value="Male" ng-model="formData.gender">
+                        Male
+                    </label>
+                     <label>
+                        <input type="radio" name="optionsRadios" id="radiofemale" value="Female" ng-model="formData.gender">
+                        Female
+                    </label>
+                </div>
+                </form>
+                <div class="radio" required>
+                   
+                </div>
+             
+                <div>
+<!--                    <label for="language">Skills</label>-->
+                    <input type="text" class="form-control" id="language" placeholder="your Skills" ng-model="formData.favlang" required>
+                </div>
+                <div>
+                <label class="img-rounded">Upload Your Documents</label>
+                <label class="btn bg-primary btn-l" for="exampleInputFile"><input class="bg-primary" type="file" id="exampleInputFile"></label>
+    
+  </div>
+ 
+   <br>
+                <button type="submit" class="nav nav-pills pull-right btn bg-primary btn-block" ng-click="createUser()" ng-disabled="addForm.$invalid">Submit</button>
+            </form>
+        </div>
+    </div>
+  
+</div>
+
+</div>
+	

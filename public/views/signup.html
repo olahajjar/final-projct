@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="row text-center">
+        <div class="col-md-12">
+            <h1>SignUp New Account</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>Username</h3>
+                    <input ng-model="userinput.username" type="text" placeholder="Username">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>Password</h3>
+                    <input ng-model="userinput.password" type="password" placeholder="Password">
+                </div>
+                <div class="col-md-12">
+                    <h3>Confirm Password</h3>
+                    <input ng-model="userinput.passwordOther" type="password" placeholder="Confirm Password">
+                </div>
+                <div class="col-md-12">
+                    <h3>Privilage</h3>
+                    <input ng-model="userinput.privilage" type="text" placeholder="privilage">
+                </div>
+                <div ng-if="password != passwordOther">
+                    <p>Passwords must match</p>
+                </div>
+            </div>
+            <br>
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <button class="btn btn-primary btn-xs" ng-click="signup()">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,40 @@
+
+<div class="row content">
+
+       <div class="col-md-7">
+            <div id="map" class="img-thumbnail bg-warning"></div>
+        </div>
+<div class="col-md-5">
+
+
+    <div class="panel panel-default">
+
+
+            <h2 class="text-center">Find Scientists <span class="glyphicon glyphicon-search"></span></h2>
+
+
+     
+        <div class="panel-body">
+
+      
+            <form name ="queryForm">
+
+                
+
+                <div class="form-group">
+
+                    <input type="text" class="form-control" id="favlang" placeholder="$€arch Using Scientist's Skills" ng-model="formData.favlang">
+                </div>
+
+
+               
+                <button type="submit" class="btn btn-primary btn-block" ng-click="queryUsers()">Search</button>
+            </form>
+        </div>
+
+        <div ng-show="queryCount>0" class="panel-footer">
+                <p class="text-center">The Result: {{queryCount}} Scientist</p>
+        </div>
+    </div>
+</div>
+</div>

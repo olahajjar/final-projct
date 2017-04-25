@@ -1,0 +1,118 @@
+<div class="container" ng-init="loadData()">
+		<div class="row">
+			<section id="banner">
+			</section>
+		</div>
+		<br>
+		<h1>Subject Name</h1>
+		<div class="row">
+			<div class="col-md-11 col-md-offset-1">
+				<div ng-repeat="itm in items | orderBy:sort :true ">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-1">
+							<div class="title">
+								<p ng-show="showTitle[$index]">Title: {{itm.title}}</p>
+								<input type="text" ng-model="itm.title" ng-init="itm.title" ng-show="titleInput[$index]" class="form-control">
+							</div>
+						</div>
+						<div class="col-md-8 col-md-offset-1">
+							<div class="discription">
+								<p ng-show="showDesc[$index]">Describ: {{itm.description}}</p>
+								<textarea rows="1" ng-model="itm.description" ng-init="itm.description" ng-show="descInput[$index]" class="form-control">
+								</textarea>
+							</div>
+							<br>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-8 col-md-offset-1">
+							<textarea rows="1" ng-model="newComment" class="form-control" placeholder="add a comment">
+							</textarea>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-2 col-md-offset-1">
+							<button ng-click="addComment(itm._id, newComment)" class="btn btn-primary btn-xs">
+								Add Comment
+							</button>
+						</div>
+						<mark>{{itm.comments.length}} Comments</mark>
+						<button ng-click="commentsBtn($index)" class="btn btn-primary btn-xs">
+							Show/Hide Comments
+						</button>
+						<br>
+						<div class="col-md-11 col-md-offset-1">
+							<div ng-show="showComments[$index]">
+								<div ng-repeat="comment in itm.comments track by $index">
+									<span>{{comment}}</span>
+									<button class="btn btn-danger btn-xs" ng-click="delComment(itm._id, $index)"> X
+									</button>
+								</div>
+							</div>
+							<br>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 col-md-offset-1">
+							<button class="btn btn-info btn-xs">
+								<i class="glyphicon glyphicon-thumbs-up" ng-click="upvote(itm._id, itm.upvote)">
+                        </i>
+							</button>
+							<b>{{itm.upvote}}</b>
+							<button class="btn btn-danger btn-xs">
+								<i class="glyphicon glyphicon-thumbs-down" ng-click="downvote(itm._id,itm.downvote)">
+                        </i>
+							</button>
+							<b>{{itm.downvote}}</b>
+							<b>views: <p>{{itm.upvote + itm.downvote}}</p></b>
+						</div>
+					</div>
+					<br>
+					<div class="row">
+						<div class="col-md-3 col-md-offset-1">
+							<button class="btn btn-success btn-xs">
+								<i class="glyphicon glyphicon-pencil" ng-click="showEdit($index)" ng-show="editBtn[$index]">
+                        </i>
+								<i ng-click="editIssue($index, itm._id,itm.title,itm.description)" ng-show="okBtn[$index]">OK
+                        </i>
+							</button>
+							&emsp;
+							<button class="btn btn-danger btn-xs">
+								<i ng-click="delIssue(itm._id)">X
+						</i>
+							</button>
+						</div>
+					</div>
+					<br>
+					<br>
+					<hr>
+				</div>
+			</div>
+		</div>
+		<br>
+		<br>
+		<div class="add-issue">
+			<div class="row" ng-show="addIssueFields">
+				<div class="col-md-8 col-md-offset-2">
+					<div class="row">
+						<div class="col-md-12">
+							<input placeholder="Title" class="form-control" type="text" ng-model="title">
+							<textarea rows="1" placeholder="Description" class="form-control" ng-model="desc"></textarea>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<button ng-click="addNewIssue()" class="btn btn-success">Post</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row" ng-show="addBtn">
+				<div class="col-md-8 col-md-offset-2">
+					<button ng-click="showIssueField()" class="btn btn-primary">Add New</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    
